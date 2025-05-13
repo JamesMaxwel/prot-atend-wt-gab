@@ -3,11 +3,11 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   output: 'export',
-  basePath: '/prot-atend-wt-gab',
+  basePath: process.env.NODE_ENV === 'production' ? '/prot-atend-wt-gab' : '',
   images: {
     unoptimized: true,
   },
-  assetPrefix: '/prot-atend-wt-gab/',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/prot-atend-wt-gab/' : '',
   trailingSlash: true,
 };
 

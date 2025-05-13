@@ -2,11 +2,14 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
-  title: "Gabiju Atendimento",
-  description: "Sistema de atendimento Gabiju Transportes",
+  title: "Gabiju Transportes - Atendimento",
+  description: "Sistema de atendimento automatizado da Gabiju Transportes",
 };
 
 export default function RootLayout({
@@ -15,12 +18,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
-      <body className={inter.className}>
-        <main className="flex min-h-screen flex-col bg-[#111b21]">
-          {children}
-        </main>
-      </body>
+    <html lang="pt-BR" className={inter.className}>
+      <body>{children}</body>
     </html>
   );
 } 
