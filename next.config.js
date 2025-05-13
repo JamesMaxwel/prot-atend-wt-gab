@@ -7,6 +7,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  assetPrefix: '/prot-atend-wt-gab/',
+  trailingSlash: true,
 };
 
 module.exports = nextConfig; 
