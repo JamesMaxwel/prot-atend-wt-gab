@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 17, 27, 33;
+  --background-end-rgb: 17, 27, 33;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #0a1014;
+}
+
+.whatsapp-bg {
+  background-color: #0c1317;
+  opacity: 1;
+  background-image: linear-gradient(#0b141a 2.1px, transparent 2.1px), linear-gradient(90deg, #0b141a 2.1px, transparent 2.1px);
+  background-size: 24px 24px;
+  background-position: -2px -2px;
+}
+
+/* Estilização da barra de rolagem */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #374045;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4a545a;
+}
+
+/* Estilo do smartphone */
+.smartphone {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  height: 720px;
+  background: #1f1f1f;
+  border-radius: 45px;
+  box-shadow: 0 0 0 11px #1f1f1f, 0 0 0 13px #191919, 0 0 0 20px #111;
+  overflow: hidden;
+}
+
+.smartphone::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 28px;
+  width: 150px;
+  background: #1f1f1f;
+  border-bottom-left-radius: 17px;
+  border-bottom-right-radius: 17px;
+  z-index: 2;
+}
+
+/* Estilo das mensagens do WhatsApp */
+.message-bubble {
+  position: relative;
+  padding: 8px 12px;
+  border-radius: 8px;
+  max-width: 85%;
+  word-wrap: break-word;
+}
+
+.message-bubble.bot {
+  background: #202c33;
+  border-top-left-radius: 0;
+}
+
+.message-bubble.user {
+  background: #005c4b;
+  border-top-right-radius: 0;
+}
+
+.message-bubble.bot::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -8px;
+  width: 8px;
+  height: 13px;
+  background: radial-gradient(circle at 0 0, rgba(0,0,0,0) 8px, #202c33 8px);
+}
+
+.message-bubble.user::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -8px;
+  width: 8px;
+  height: 13px;
+  background: radial-gradient(circle at 8px 0, rgba(0,0,0,0) 8px, #005c4b 8px);
+}
+
+/* Input customizado */
+.chat-input {
+  background: #2a3942;
+  border-radius: 24px;
+  padding: 9px 12px;
+  margin: 5px 10px;
+  color: #d1d7db;
+  font-size: 15px;
+  line-height: 20px;
+  min-height: 20px;
+  outline: none;
+} 

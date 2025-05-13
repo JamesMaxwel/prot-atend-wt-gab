@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Protótipo WhatsApp - Gabiju Transportes
 
-## Getting Started
+Este é um protótipo de atendimento via WhatsApp para a Gabiju Transportes, desenvolvido como parte do Projeto Integrador IV – Grupo 14.
 
-First, run the development server:
+## 🚀 Projeto: Rota Digital - Inovando a comunicação na Gabijú
+
+### 👥 Integrantes
+- Maria Paula Fassini
+- Jannifer Quadro Coelho
+
+### 💻 Tecnologias
+
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- Zustand (Gerenciamento de Estado)
+
+### ✨ Funcionalidades
+
+- Interface similar ao WhatsApp Web
+- Respostas automáticas contextualizadas
+- Informações sobre serviços da Gabiju
+- Sistema de cotações
+- Rastreamento de cargas
+- Contatos e localização
+- Trabalhe conosco
+
+### 🛠️ Instalação
 
 ```bash
+# Clone o repositório
+git clone https://github.com/JamesMaxwel/prot-atend-wt-gab.git
+
+# Entre no diretório
+cd prot-atend-wt-gab
+
+# Instale as dependências
+npm install
+
+# Inicie o servidor de desenvolvimento
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 📱 Layout Responsivo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Design adaptativo para desktop e mobile
+- Frame de smartphone em telas grandes
+- Interface otimizada para diferentes dispositivos
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🔒 Segurança
 
-## Learn More
+- Sem exposição de dados sensíveis
+- Respostas automatizadas seguras
+- Proteção de informações confidenciais
 
-To learn more about Next.js, take a look at the following resources:
+### 📄 Licença
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Desenvolvido para a Gabiju Transportes - 2024
